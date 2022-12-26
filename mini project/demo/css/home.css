@@ -1,0 +1,61 @@
+.headlogo{
+    height: 100px;
+}
+#blood{
+    border-radius:100px ;
+    height: 200px;
+    width: 200px;
+}
+#donar{
+    align-content: center;
+    border-radius:100px ;
+    height: 200px;
+    width: 200px;
+    margin-left: 50px;
+}
+.four_two{
+    margin-top: 75px;
+    margin-left: 50px;
+}
+.fa-droplet{
+
+    color: rgb(246, 11, 11);
+   
+}
+.four_one{
+    margin-top: 25px;
+    margin-left: 45px;
+    color: rgb(241, 31, 31);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn{
+    width: 180px;
+    height: 50px;
+    margin-top: 25px;
+}
+.input-group{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.bts{
+   
+    background-image: url("https://i0.wp.com/www.redorbit.com/wp-content/uploads/2018/08/arm-blood-close-up-1164531.jpg?w=1275&ssl=1");
+    background-repeat: no-repeat;
+}
+.card-img-top{
+    height: 150px;
+}
+.log{
+    background-image: url("https://st1.thehealthsite.com/wp-content/uploads/2012/06/blood-donation.jpg?impolicy=Medium_Widthonly&w=710");
+}
+.colbor{
+    border: 4px solid black;
+    margin-top: 20px;
+    background-color: rgb(234, 64, 98);
+
+    height: 50px;
+    width: 100px;
+}
+    .table{
+        margin-top: 20px;
+    }

@@ -1,0 +1,82 @@
+/* header */
+
+.header {
+    height: 100px;
+    margin: 0%;
+    padding: 10px;
+    background-color: white;
+}
+
+.head1 {
+    margin: 0%;
+    float: left;
+}
+
+.head3 {
+    float: left;
+    height: 50px;
+    width: 350px;
+    margin-left: 600px;
+    padding: 5px;
+    text-align: center;
+}
+.head31{
+    float: left;
+    margin-top: 30px;
+    color: red;
+    text-shadow: 2px 2px 8px #ff000050;
+
+}
+.head32{
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+    color: rgb(4, 149, 4);
+}
+
+.head2 {
+    margin: 0%;
+    float: right;
+    height: 100%;
+    font-size: 30px;
+    background-color: transparent;
+    width: 400px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    margin: 0px;
+}
+
+#register {
+    font-size: 25px;
+    background-color: orangered;
+    border: 1px solid orangered;
+    margin: 20px;
+    float: left;
+    border-radius: 5px;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+}
+
+#login {
+    font-size: 25px;
+    background-color: orangered;
+    border: 1px solid orangered;
+    margin: 20px;
+    float: left;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+#register:hover {
+    background-color: rgb(202, 10, 10);
+}
+
+#login:hover {
+    background-color: rgb(202, 10, 10);
+}

@@ -1,0 +1,87 @@
+.Blood_care {
+    background-color: rgba(6, 152, 249, 0.296);
+    height: 625px;
+    width: 100%;
+    margin: 0%;
+    padding-top: 30px;
+}
+
+#BC_one1 {
+    text-align: center;
+    font-size: 50px;
+    color: red;
+    text-shadow: 2px 2px 8px #ff000050;
+    margin: 20px;
+    padding-top: 30px;
+}
+
+#BC_one2 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+span {
+    color: red;
+}
+
+#BC_one3 {
+    text-align: center;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    opacity: 0.7;
+}
+
+/* buttons */
+
+.BC_two1,
+.BC_two2,
+.BC_two3,
+.BC_two4,
+.BC_two5,
+.BC_two6 {
+    float: left;
+    width: 210px;
+    height: 180px;
+    /* margin-top: 40px;
+    margin-left: 50px; */
+    text-align: center;
+    padding: 0px;
+    margin-left: 40px;
+    margin-top: 40px;
+    /* background-color: aqua; */
+}
+
+#ON,
+#TW,
+#TH,
+#FR,
+#FVE,
+#SX {
+    color: red;
+    border: 1PX solid rgba(172, 162, 162, 0.378);
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    padding: 20px;
+    text-align: center;
+    /* font-size: 20px; */
+    margin-left: 50px;
+    cursor: pointer;
+    background-color: rgba(248, 248, 248, 0.745);
+}
+
+/* #ON1{
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+} */
+#ON:hover,
+#TW:hover,
+#TH:hover,
+#FR:hover,
+#FVE:hover,
+#SX:hover {
+    background-color: rgba(255, 128, 0, 0.511);
+}

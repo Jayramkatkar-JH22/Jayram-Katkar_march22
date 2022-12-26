@@ -1,0 +1,64 @@
+.xyz {
+    background-color: whitesmoke;
+
+}
+
+.why {
+    /* background-color: rgba(0, 255, 247, 0.538); */
+    width: 980px;
+    height: 550px;
+    margin: auto;
+    padding-top: 50px;
+    /* margin-top: 50px; */
+}
+
+.why_one {
+    margin-top: 100px;
+    margin-left: 30px;
+    float: left;
+    width: 300px;
+    height: 200px;
+}
+
+#img1 {
+    width: 400px;
+    height: 300px;
+    margin-right: 10px;
+}
+
+.why_two {
+    color: rgb(255, 0, 0);
+    font-size: larger;
+    margin-top: 100px;
+    float: left;
+    /* background-color: yellowgreen; */
+    margin-left: 160px;
+}
+
+.why_three {
+    color: rgb(25, 13, 15);
+    float: left;
+    /* background-color: gold; */
+    /* margin: 10px; */
+    margin-left: 170px;
+    font-size: 15px;
+    text-justify: auto;
+    width: 470px;
+    height: 140px;
+    opacity: 0.8;
+}
+
+.why_four {
+    float: left;
+    margin-left: 650px;
+    margin-top: 40px;
+    /* background-color:rgb(255, 123, 0); */
+    padding: 10px;
+    border: 1px solid orangered;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.why_four:hover {
+    background-color: orangered;
+}

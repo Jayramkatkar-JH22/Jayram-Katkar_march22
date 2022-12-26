@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="icon" type="image/x-icon" href="/CSS_files/images/logo.jpg">
+    
+    <link rel="stylesheet" href="/CSS_files/RegForDonate.css">
+    <link rel="stylesheet" href="/CSS_files/footer.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <div class="main">
+        <div class="register">
+            <h2>Register here For Donation</h2>
+            <form id="register" action="#">
+                <label>First Name :</label>
+                <br>
+                <input type="text" name="fname" id="name" placeholder="Enter Your First Name">
+                <br><br>
+                <label >Last Name :</label>
+                <br>
+                <input type="text" name="lname" id="name" placeholder="Enter Your Last Name">
+                <br><br>
+                <label>Age :</label>
+                <br>
+                <input type="number" name="age" id="name" placeholder="How old are You?">
+                <br><br>
+                <label>Blood Type :</label>
+                <br>
+                <select name="bgroup" id="name">
+                    <option>O+</option>
+                    <option>A+</option>
+                    <option>B+</option>
+                    <option>AB+</option>
+                    <option>O-</option>
+                    <option>A-</option>
+                    <option>B-</option>
+                    <option>AB-</option>
+                    </select>
+                <br><br>
+                <label>Address :</label>
+                <br>
+                <textarea name="address" id="name" cols="54" rows="4"></textarea>
+                <br><br>
+                <label>Mobile Number :</label>
+                <br>
+                <input type="number" name="mob" id="name" placeholder="Enter Your Mob No.">
+                <br><br>
+                <label>Gender :</label>
+                <br>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="male">
+                &nbsp;
+                <span id="male">Male</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="female">
+                &nbsp;
+                <span id="female">Female</span>
+                <br><br>
+                <input type="submit" value="Submit" name="submit" id="submit">
+            </form>
+        </div>
+        <div class="footer2">
+            <div class="f21">
+                <h1 id="icons"><i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram-square"></i>
+                    <i class="fa-brands fa-twitter-square"></i>
+                    <i class="fa-brands fa-google-plus-square"></i>
+                    <i class="fa-brands fa-youtube-square"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </h1>
+            </div>
+            <div class="f22">
+                <b id="love">Made with <span style="color:red">Love</span></b>
+                <p>Copyright 2022. <i class="fa-thin fa-at"></i> All Rights Reserved By <span
+                        style="color:orangered; text-shadow: 2px 2px 4px #000000;">Blood Care Bank</span><br>
+                    Design and Developed by <span
+                        style="color:orangered;text-shadow: 2px 2px 4px #000000;">Team</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(()=>{
+            $("#submit").click(()=>{
+                // console.log("clicked");
+                alert("Registered Successfully..!!");
+                $("#name").val("");
+                $("#male").val("");
+                $("#female").val("");
+
+            });
+        });
+    </script>
+</body>
+</html>

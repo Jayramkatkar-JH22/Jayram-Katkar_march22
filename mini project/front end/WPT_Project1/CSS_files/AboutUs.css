@@ -1,0 +1,92 @@
+/* .main{
+    width: 100%;
+} */
+.icon{
+    padding-left: 50px;
+    padding-top: 50px;
+    float: left;
+}
+
+#lo{
+    width: 400px;
+    height: 400px;
+}
+
+.content{
+    float: left;
+    padding-left: 50px;
+    padding-top: 100px;
+    float: left;
+    font-size: larger;
+    line-height: 200%;
+    width: 1000px;
+}
+#l1{
+    font-size:40px;
+    color: red;
+    text-shadow: 2px 2px 8px #ff000050;
+
+}
+#l2{
+    font-size:20px;
+    opacity: 0.7;
+    font-family:cursive ;
+}
+
+#feedback{
+    font-size: 20px;
+    background-color: orangered;
+    border: 1px solid orangered;
+    margin: 10px;
+    float: left;
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px;
+    /* height: 30px; */
+    text-align: center;
+    color: whitesmoke;
+    cursor: pointer;
+}
+#feedback :hover{
+    background-color: rgb(248, 0, 0);
+}
+
+.main2{
+    margin-top: 50px;
+    height: 800px;
+    background-color: rgba(209, 170, 118, 0.542);
+}
+
+.contact{
+    padding-top: 50px;
+    margin-top: 500px;
+    margin-left: 500px;
+    margin-right: 300px;
+    height: 500px;
+    /* background-color: aqua; */
+}
+
+#c1{
+    font-size: 40px;
+    color: orangered;
+    text-shadow: 2px 2px 8px #ff000050;
+
+}
+
+#i1{
+    font-size: 30px;
+    /* border: 1px solid red; */
+    width: 40px;
+    margin: 0%;
+    margin-left: 50px;
+    padding-top: 2%;
+    color: red;
+    text-shadow: 2px 2px 8px #ff000050;
+
+}
+#i2{
+    
+    font-size: large;
+    margin-left: 50px;
+
+}

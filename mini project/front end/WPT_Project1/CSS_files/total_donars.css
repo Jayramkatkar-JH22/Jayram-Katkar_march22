@@ -1,0 +1,46 @@
+.total {
+
+    width: 100%;
+    height: 634px;
+}
+
+.total_one {
+    text-align: center;
+    /* text-shadow: 0 0 3px #ff000081; */
+    text-shadow: 2px 2px 8px #ff00008b;
+    font-size: 40px;
+    margin-top: 20px;
+    color: red;
+}
+
+.total_two {
+    background-image: url("/CSS_files/images/giveblood.png");
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    height: 577px;
+    margin-top: 10px;
+}
+
+.total_two1 {
+    height: 400px;
+    width: 800px;
+    /* background-color: aqua; */
+    margin-left: 300px;
+    margin-top: 0px;
+    padding: 50px;
+}
+
+.APOS,.ANEG,.ABPOS,.ABNEG,.BPOS,.BNEG,.OPOS,.ONEG {
+    float: left;
+    color: rgb(255, 255, 255);
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 68, 0, 0.8);
+    margin-left: 80px;
+    margin-top: 100px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid orangered;
+    border-radius: 10px;
+}

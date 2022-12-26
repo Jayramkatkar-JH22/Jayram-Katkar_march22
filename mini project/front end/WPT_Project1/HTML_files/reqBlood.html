@@ -1,0 +1,237 @@
+<html>
+
+<head>
+    <title> Request Blood </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="/CSS_files/images/logo.jpg">
+
+</head>
+
+<style>
+    body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background: linear-gradient(120deg, #7aadcf, #d7b5e6);
+    }
+
+    .container {
+        max-width: 650px;
+        width: 90%;
+        padding: 25px 30px;
+        background-color: #fff;
+        border-radius: 5px;
+        float: left;
+        padding:0%;
+        margin:0px;
+        font-size: larger;
+    }
+
+    .container .title {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 500;
+        padding-bottom: 30px;
+    }
+
+    .container form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 10px 0 12px 0;
+    }
+
+    table {
+        width: 50%;
+    }
+
+    th,
+    td {
+        background-color: rgb(246, 229, 229);
+        padding: 2%;
+        text-align: center;
+    }
+
+    table.center {
+        margin-left: none;
+        margin-right: none;
+    }
+
+    .style {
+        height: 20px;
+        width: 80%;
+    }
+
+    .form-group input {
+        outline: none;
+        /* border-radius: 5px; */
+        border: 1px solid #ccc;
+        font-size: 15px;
+        border-bottom-width: 2px;
+        transition: all 0.3s ease;
+        padding-top: 0;
+    }
+
+    .form-group input:focus,
+    .form-group input:valid {
+        border-color: #362f38;
+    }
+
+    form .button input:hover {
+        background: linear-gradient(120deg, #7aadcf, #d7b5e6);
+    }
+</style>
+
+
+<body>
+
+    <div class="container">
+
+    <h1 style="color:rgb(255, 38, 0) ; text-align: center;text-shadow: 2px 2px 8px #ff000050;" >Request for blood</h1>
+
+        <form 
+            oninput="res.value=parseInt(quantity.value)*parseInt(basicprize.value);">
+
+            <div class="form-group">
+                <table class="center" , style="width:100%">
+
+
+                    <tr>
+                        <th>
+                            <h4> ACCEPTOR NAME<span style="color: red;">*</span> <span><input class="style" placeholder="FULL NAME" type="text"
+                                        name="NM" id="NM"></span></h4>
+                        </th>
+                        
+                        <th>
+
+                            <h4>
+
+                                <lable for="bt"> BLOOD GROUP<span style="color: red;">*</span></lable><br>
+
+                                <select class="style" name="bt" id="bt">
+                                    <option >BLOOD GROUP</option>
+                                    <option value="A+">A+</option>
+                                    <option value="O+">O+</option>
+                                    <option value="B+">B+</option>
+                                    <option value="AB+">AB+</option>
+                                    <option value="A-">A-</option>
+                                    <option value="O-">O-</option>
+                                    <option value="B-">B-</option>
+                                    <option value="AB-">AB-</option>
+                                </select>
+
+                            </h4>
+                         </tr>
+                    </th><br><br>
+                </div>
+
+            
+            
+                <tr>
+                <th>
+                    <h4> <lable for="bt"> STATE IN INDIA<span style="color: red;">*</span></lable><br>
+
+                        <select name="state" id="state" class=" style">
+                            <option>   STATES   </option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                            <option value="Daman and Diu">Daman and Diu</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Lakshadweep">Lakshadweep</option>
+                            <option value="Puducherry">Puducherry</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="West Bengal">West Bengal</option>
+                            </select></h4>
+                </th>
+                <th>
+                    <h4> DISTRICT<span style="color: red;">*</span> <span><input class="style" placeholder="DISTRICT" type="text"
+                                name="dist" id="dist"></span></h4>
+                </th>
+            </tr>
+
+            
+            
+            <div class="form-group">
+                <tr>
+                    <th>
+                        <h4> QUANTITY <label for="quantity">(1 to 5):</label><br>
+                            <input placeholder="BAG-350ml" type="number" id="quantity" name="quantity" min="1" max="5"
+                                class="style">
+                            <h4>
+                    </th>
+
+                    <th>
+                        <h4>BASIC PRIZE/BAG: <input class="style" type="number" id="basicprize" value="350"></h4>
+                    </th>
+                </tr><br><br>
+            </div>
+          </table>
+
+            <div class="form-group">
+                <table style="margin-left:27%;">
+            
+                    <tr>
+                        <th>Total Bill :<output id="res"></output><br>
+
+                            <input  type="button" value="Print" onClick="pr()">
+                        </th>
+                    </tr><br><br>
+
+                    <tr>
+                        <th>
+                            <h3>BILL RECEIPT :</h3> 
+                            <div  style="text-align: left"  id="result"></div>
+                        </th>
+                    </tr><br><br>
+
+                </table>
+            </div>
+            <script>
+                function pr() {
+                    document.getElementById("result").innerHTML = " NAME:" + document.getElementById('NM').value
+
+                        + " <br>  BLOOD GROUP: " + document.getElementById('bt').value
+                        + " <br>  STATE: " + document.getElementById('state').value
+                        + " <br>  DISTRICT: " + document.getElementById('dist').value
+                        + " <br> BLOOD BAGS: " + document.getElementById('quantity').value
+                        + " <br> TOTAL BILL: " + document.getElementById("res").value
+                        + "  " + document.getElementById("result").innerHTML;
+                }
+            </script>
+        </form>
+    </div>
+
+</body>
+

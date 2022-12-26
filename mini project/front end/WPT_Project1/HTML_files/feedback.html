@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/CSS_files/images/logo.jpg">
+    <title>Feedback Form</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            width: 800px;
+            margin-left: 20px;
+            padding: 0%;
+        }
+
+        #head {
+            font-size: 35px;
+            margin-left: 550px;
+            color: rgb(249, 62, 30);
+            text-shadow: 2px 2px 4px #9d8d8d;
+
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid rgb(70, 68, 68);
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        input[type=email],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid rgb(70, 68, 68);
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=submit] {
+            background-color: rgb(37, 116, 161);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: center;
+            width: 100px;
+            margin-left: 285px;
+            margin-top: 10px;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin-left: 300px;
+            background: linear-gradient(120deg, #7aadcf, #d7b5e6);
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    </style>
+</head>
+
+<body style="background-color:whitesmoke">
+    <h2 id="head">FEEDBACK FORM</h2>
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Mail Id</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" name="mailid" placeholder="Your mail id.." required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="none">Select Country</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="russia">Russia</option>
+                        <option value="japan">Japan</option>
+                        <option value="india">India</option>
+                        <option value="china">China</option>
+                    </select required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="feed_back">Feed Back</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:70px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit" id="submit">
+            </div>
+        </form>
+    </div>
+    <script>
+        $(()=>{
+            $("#submit").click(()=>{
+                let a = $("#fname").val();
+                let b = $("#lname").val();
+                let c = $("#email").val();
+                let d = $("#country").val();
+                let e = $("#subject").val();
+
+                // localStorage.clear();
+                // localStorage.removeItem("");
+                localStorage.setItem("First name",a);
+                localStorage.setItem("Last name",b);
+                localStorage.setItem("E-mail",c);
+                localStorage.setItem("Country",d);
+                localStorage.setItem("Feedback",e);
+                alert("Thank You for your valuable Feedback..!!");
+            });         
+        });
+        console.log(localStorage);
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- onclick="alert('Thank You for your valuable Feedback..!!')" -->
+<!-- <script>
+        localStorage.setItem("name","aniket");
+        console.log(localStorage);
+        localStorage.removeItem("name");
+        console.log(localStorage);
+    </script> -->
